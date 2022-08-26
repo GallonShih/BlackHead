@@ -1,3 +1,6 @@
 __pycache__
 rental-env
 .DS_store
+*.docx
+df*
+/data
