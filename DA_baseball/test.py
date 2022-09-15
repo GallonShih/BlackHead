@@ -11,7 +11,7 @@ r = session.get(url2, verify=False)
 r.html.render()
 res = r.html.raw_html
 print(res[:10])
-with open("./data/cpbl_v2.txt", "wb") as text_file:
+with open("./data/cpbl.txt", "wb") as text_file:
     text_file.write(res)
 soup = BeautifulSoup(res, "lxml")
 result = soup.findAll('div', {'class': 'GameNote'})
